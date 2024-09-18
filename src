@@ -1,0 +1,48 @@
+SET SQL_SAFE_UPDATES = 0;
+-- 1. Criação de Banco de Dados: CREATE DATABASE
+CREATE DATABASE BIBLIOTECA;
+-- 2. Seleção do Banco de Dados: USE DATABASE
+USE BIBLIOTECA;
+-- 3. Criação de tabelas no Banco de Dados;
+CREATE TABLE Vendas(
+    ID_Vendas INT,
+    Curso VARCHAR(100),
+    Aluno VARCHAR(100),
+    Estado VARCHAR(100),
+    Valor DECIMAL(10, 2)
+);
+-- 4. Incluir dados na tabela: INSERT INTO
+INSERT INTO Vendas (ID_Vendas, Curso, Aluno, Estado, Valor)
+VALUES
+(1, 'Excel', 'José', 'SC', 100),
+(2, 'VBA', 'Maria','SP', 80),
+(3, 'Excel', 'João', 'AM', 50),
+(4, 'Excel', 'Bernardo', 'SP', 100),
+(5, 'VBA', 'Paulo', 'PR', '100'),
+(6, 'Power', 'Artur', 'PA', '80'),
+(7, 'Excel', 'Tiago', 'AM', '100'),
+(8, 'Power', 'Sandra', 'SC', 50),
+(9, 'Excel', 'Cauan', 'RJ', '80'),
+(10, 'VBA', 'Luiza', 'SC', '100');
+-- 5. SELECIONAR dados de uma tabela: SELECT
+SELECT * FROM Vendas;
+SELECT Aluno, Curso, Valor FROM Vendas;
+-- 6. Ordenar dados em uma tabela: ORDER BY
+SELECT * FROM Vendas
+ORDER BY ID_Vendas;
+-- 7. FILTRAR dados em uma tabela: WHERE
+SELECT * FROM Vendas
+WHERE Estado = 'RJ';
+-- 8. Alteração de valores dentro da tabela: UPDATE
+UPDATE Vendas
+SET Valor = 150
+WHERE Curso = 'VBA';
+SELECT * FROM Vendas;
+
+-- 9. EXCLUSÃO de linhas da tabela: DELETE
+DELETE FROM Vendas
+where id_vendas = 10;
+SELECT*FROM Vendas;
+-- 10. EXCLUSÃO de todos os dados de uma tabela: TRUNCATE
+TRUNCATE TABLE Vendas;
+
