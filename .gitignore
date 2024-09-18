@@ -1,0 +1,44 @@
+# Ignorar arquivos temporários e de log
+*.log
+*.tmp
+
+# Ignorar arquivos de configuração do sistema
+.DS_Store
+*.swp
+*.swo
+*.swn
+
+# Ignorar diretórios de IDEs e editores
+.idea/
+.vscode/
+
+# Ignorar arquivos e diretórios gerados por ferramentas de desenvolvimento
+node_modules/
+dist/
+build/
+
+# Ignorar arquivos de banco de dados e backups
+*.sql
+*.sqlite
+*.db
+*.bak
+
+# Ignorar arquivos de ambiente
+.env
+
+# Ignorar arquivos de cache
+*.cache
+*.pyc
+*.pyo
+
+# Ignorar arquivos de sistema específicos
+Thumbs.db
+
+# Ignorar arquivos de exportação e importação de dados
+*.csv
+*.tsv
+*.json
+
+# Ignorar arquivos temporários do sistema operacional
+*.pid
+*.lock
