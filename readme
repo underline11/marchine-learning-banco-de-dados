@@ -1,0 +1,19 @@
+# Sistema de Biblioteca
+
+Este projeto é um sistema de gerenciamento de biblioteca, com um banco de dados que armazena informações sobre livros, autores e empréstimos.
+
+## Estrutura do Banco de Dados
+
+O banco de dados é composto pelas seguintes tabelas:
+
+- **autores**: Armazena informações sobre os autores dos livros.
+- **livros**: Armazena informações sobre os livros disponíveis na biblioteca, incluindo o autor.
+- **emprestimos**: Registra os empréstimos de livros.
+
+## Comandos SQL
+
+### Criação do Banco de Dados
+
+```sql
+CREATE DATABASE Biblioteca;
+USE Biblioteca;
